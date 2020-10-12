@@ -7,14 +7,22 @@
     <link href="/styles.css" rel="stylesheet">
 </head>
 
-<body id = 'overlay'>
+<body id = 'overlay' style = 'background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7))'>
     <header> 
         <%- include('./partials/header'); %> 
     </header>
     <div class="container">
+        <h3 class = 'display-3 my-4'> Comic of the Day </h3>
+        <div class="jumbotron">
+            <h1 class="display-4"> <%- title %> </h1>
+            <p class="lead"> <%- description %> </p>
+            <hr class="my-4">
+            <img class = 'img-fluid' src = '<%- img %>' alt = 'comic of the day'> 
+            <p> <%- date %> </p> 
+          </div>
     </div>
-    
-<script src = '../public/scripts.js'> </script> 
+
+<script src = 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'> </script> 
 </body>
 </html>
     
