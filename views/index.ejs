@@ -12,13 +12,13 @@
         <%- include('./partials/header'); %> 
     </header>
     <div class="container">
-        <h3 class = 'display-3 my-4'> Comic of the Day </h3>
-        <div class="jumbotron">
-            <h1 class="display-4"> <%- title %> </h1>
-            <p class="lead"> <%- description %> </p>
+        <h3 class = 'display-3 my-4 text-light'> Comic of the Day </h3>
+        <div class="jumbotron bg-dark">
+            <h3 class="display-4 text-light"> <%- title %> </h3>
+            <p class="lead text-light"> <%- description %> </p>
+            <p class = 'text-light d-inline lead'> <%- date %> </p> 
             <hr class="my-4">
             <img class = 'img-fluid' src = '<%- img %>' alt = 'comic of the day'> 
-            <p> <%- date %> </p> 
           </div>
     </div>
 

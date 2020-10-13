@@ -4,7 +4,6 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser'); 
 const config = require('./config/keys'); 
 
-
 app.set('view engine', 'ejs'); 
 app.use(express.static(__dirname + '/public')); 
 app.use(bodyParser.urlencoded({extended: true})); 
@@ -18,7 +17,7 @@ mongoose.connect(config.DB, {
 .then(() => console.log('connected to db'))
 .catch(() => console.log('could not connect to db')); 
 
-app.use(require('./routes/index')); 
+app.use(require('./routes')); 
 
 app.listen(config.PORT, () => console.log(`server started on port: ${config.PORT}`))
 
