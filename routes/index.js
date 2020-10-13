@@ -7,7 +7,6 @@ router.get('/', require('./getComic'));
 
 router.get('/randomComic', require('./getRandomComic')); 
 
-router.get('/check', (req,res) => {
-    res.render('randomComic'); 
-})
+router.post('/changeImage', require('./changeImage')); 
+
 module.exports = router; 
