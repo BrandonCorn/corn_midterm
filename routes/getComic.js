@@ -7,7 +7,7 @@ module.exports = async(req,res) => {
         comic = data.data; 
     })
     .catch(err => console.log('could not retrieve comic')); 
-    console.log(comic);
+   
     const date = `${comic.month}/${comic.day}/${comic.year}` 
     res.render('index', {
         img: comic.img, 

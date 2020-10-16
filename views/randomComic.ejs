@@ -7,19 +7,21 @@
     <link href="/styles.css" rel="stylesheet">
 </head>
 
-<body id = 'overlay' style = 'background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7))'>
+<body id = 'overlay'>
     <header> 
         <%- include('./partials/header'); %> 
     </header>
     <div class="container">
-        <h3 class = 'display-3 my-4 text-light'> Random Comic </h3>
+        <h3 class = 'display-3 my-4 text-light text-center'> Random Comic </h3>
         <div class="jumbotron bg-dark">
             <h3 id = 'title' class="display-4 text-light"> <%- title %> </h3>
             <p id = 'description' class="lead text-light"> <%- description %> </p>
             <p id = 'date' class = 'text-light d-inline lead'> <%- date %> </p> 
             <button onclick= 'changeImage()' class = 'btn btn-outline-primary ml-4'> Change Image </button>
             <hr class="my-4">
-            <img id = 'comic-image' class = 'img-fluid' src = '<%- img %>' alt = 'random comic'> 
+            <div class = 'd-flex justify-content-center'> 
+                <img id = 'comic-image' class = 'img-fluid' src = '<%- img %>' alt = 'random comic'> 
+            </div> 
           </div>
     </div>
 

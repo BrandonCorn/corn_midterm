@@ -10,7 +10,7 @@ module.exports = async(req,res) => {
     .catch(err => console.log('could not retrieve comic'));
 
     const date = `${comic.month}/${comic.day}/${comic.year}` 
-    console.log(comic); 
+
     res.send({
         img: comic.img, 
         title: comic.title,
